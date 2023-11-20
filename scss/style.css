@@ -1,0 +1,21 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: aqua;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+}
+
+.logo-container img {
+  width: 240px;
+}
+
+.links-container a {
+  padding: 20px;
+}/*# sourceMappingURL=style.css.map */
