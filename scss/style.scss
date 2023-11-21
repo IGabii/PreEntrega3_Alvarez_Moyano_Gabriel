@@ -66,13 +66,13 @@ $fuente-titulo2: 'Times New Roman', Times, serif;
 /*----------------Especialidades------------------------------*/
 
 .especialidades-index-container{
-    margin-top:40px
+    margin:100px 0 100px 0
 }
 
 .titulo-especialidades{
     h2{
         text-align: center;
-        font-size: 40px;
+        font-size: 50px;
     }
 }
 
@@ -102,13 +102,14 @@ $fuente-titulo2: 'Times New Roman', Times, serif;
 
 .especialidades-items{
     border-radius: 20px;
-    padding:13px 13px 20px 13px;
+    padding:5px 5px 20px 5px;
     margin:10px;
     background-color: #49a9cf ;
     color:#fff;
     &:hover{
         background-color: #49a9cf;
         box-shadow:0 0 20px #000;
+        transform:scale(1.01)
     }
     figure{
         width: 210px;
@@ -117,9 +118,9 @@ $fuente-titulo2: 'Times New Roman', Times, serif;
         img{
             width: 100%;
             transition-duration: 0.2s;
-            border-radius: 10px;
+            border-radius: 20px;
             &:hover{
-                transform: scale(1.05);
+                transform: scale(1.03);
             }
         }
     }
@@ -145,18 +146,28 @@ $fuente-titulo2: 'Times New Roman', Times, serif;
 .horarios-dias{
     grid-area:dias;
     p{
-        margin-bottom: 30px;
+        margin-bottom: 40px;
     }
 }
 
 .horarios-horarios{
     grid-area: horarios;
     p{
-        margin-bottom: 30px;
+        margin-bottom: 40px;
     }
 }
 
 /*----------------------Nosotros*------------------------*/
+
+.nosotros-index-container{
+    margin:150px 0 200px 0
+}
+
+
+#titulo-nosotros{
+    text-align: center;
+    font-size: 70px;
+}
 
 .nosotros-grid-container{
     display: grid;
@@ -175,7 +186,12 @@ $fuente-titulo2: 'Times New Roman', Times, serif;
 }
 
 .texto-historia{
-    grid-area:textoHistoria
+    grid-area:textoHistoria;
+    background-size: cover;
+    background-position: center;
+    p{
+        text-align: justify;
+    }
 }
 
 .imagen-historia{
@@ -192,11 +208,13 @@ $fuente-titulo2: 'Times New Roman', Times, serif;
 }
 
 .titulo-mision{
-    grid-area:tituloMision
+    grid-area:tituloMision;
+    padding-top: 100px;
 }
 
 .imagen-mision{
     grid-area: imagenMision;
+    padding-top: 100px;
     display: flex;
     justify-content: start;
     figure{
@@ -211,5 +229,7 @@ $fuente-titulo2: 'Times New Roman', Times, serif;
 
 .texto-mision{
     grid-area:textoMision;
-
+    p{
+        text-align: justify;
+    }
 }
