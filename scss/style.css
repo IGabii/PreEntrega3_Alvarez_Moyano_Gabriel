@@ -1,10 +1,15 @@
-body {
+body, main {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
+b {
+  color: #49a9cf;
+}
+
+/*Variables*/
 .header-container {
   display: flex;
   justify-content: space-between;
@@ -42,4 +47,62 @@ body {
 
 #titulo-h2 {
   font-size: 38px;
+  font-family: "Times New Roman", Times, serif;
+}
+
+#titulo-h1 {
+  color: #49a9cf;
+  text-shadow: 1px 1px 1px #000;
+}
+
+/*----------------Especialidades------------------------------*/
+.especialidades-index-container {
+  margin-top: 40px;
+}
+
+.titulo-especialidades h2 {
+  text-align: center;
+  font-size: 40px;
+}
+
+.especialidades-items-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.especialidades-items-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.especialidades-items {
+  border-radius: 20px;
+  padding: 20px 20px 30px 20px;
+  margin: 20px;
+  background-color: #49a9cf;
+  color: #fff;
+}
+.especialidades-items figure {
+  width: 210px;
+  height: 230px;
+  margin: 0;
+}
+.especialidades-items figure img {
+  width: 100%;
+  transition-duration: 0.2s;
+  border-radius: 10px;
+}
+.especialidades-items figure img:hover {
+  transform: scale(1.05);
+}
+
+.titulo-especialidades {
+  text-align: center;
+}
+.titulo-especialidades h3 {
+  font-size: 26px;
+  margin: 0;
+  background-color: #49a9cf;
 }/*# sourceMappingURL=style.css.map */
