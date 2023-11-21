@@ -65,9 +65,20 @@ b {
   font-size: 40px;
 }
 
+.especialidades-grid-container {
+  display: grid;
+  grid-template-areas: "especialidadesItems especialidadesHorarios";
+  grid-template-columns: 2fr 0.5fr;
+}
+
 .especialidades-items-container {
   display: flex;
   flex-wrap: wrap;
+  grid-area: especialidadesItems;
+}
+
+.especialidades-horarios-container {
+  grid-area: especialidadesHorarios;
 }
 
 .especialidades-items-container {
@@ -79,10 +90,14 @@ b {
 
 .especialidades-items {
   border-radius: 20px;
-  padding: 20px 20px 30px 20px;
+  padding: 15px 15px 20px 15px;
   margin: 20px;
   background-color: #49a9cf;
   color: #fff;
+}
+.especialidades-items:hover {
+  background-color: #49a9cf;
+  box-shadow: 0 0 20px #000;
 }
 .especialidades-items figure {
   width: 210px;
@@ -104,5 +119,25 @@ b {
 .titulo-especialidades h3 {
   font-size: 26px;
   margin: 0;
-  background-color: #49a9cf;
+  background-color: none;
+}
+
+.horarios-items-container {
+  display: grid;
+  grid-template-areas: "dias horarios";
+  grid-template-columns: 1fr 2fr;
+}
+
+.horarios-dias {
+  grid-area: dias;
+}
+.horarios-dias p {
+  margin-bottom: 30px;
+}
+
+.horarios-horarios {
+  grid-area: horarios;
+}
+.horarios-horarios p {
+  margin-bottom: 30px;
 }/*# sourceMappingURL=style.css.map */

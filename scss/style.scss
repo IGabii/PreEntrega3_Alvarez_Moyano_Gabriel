@@ -76,9 +76,21 @@ $fuente-titulo2: 'Times New Roman', Times, serif;
     }
 }
 
+.especialidades-grid-container{
+    display: grid;
+    grid-template-areas:
+    "especialidadesItems especialidadesHorarios";
+    grid-template-columns: 2fr 0.5fr;
+}
+
 .especialidades-items-container{
     display: flex;
     flex-wrap: wrap;
+    grid-area:especialidadesItems
+}
+
+.especialidades-horarios-container{
+    grid-area:especialidadesHorarios
 }
 
 .especialidades-items-container{
@@ -90,10 +102,14 @@ $fuente-titulo2: 'Times New Roman', Times, serif;
 
 .especialidades-items{
     border-radius: 20px;
-    padding:20px 20px 30px 20px;
+    padding:15px 15px 20px 15px;
     margin:20px;
     background-color: #49a9cf ;
     color:#fff;
+    &:hover{
+        background-color: #49a9cf;
+        box-shadow:0 0 20px #000;
+    }
     figure{
         width: 210px;
         height: 230px;
@@ -109,12 +125,33 @@ $fuente-titulo2: 'Times New Roman', Times, serif;
     }
 }
 
-
 .titulo-especialidades{
     text-align: center;
     h3{
         font-size: 26px;
         margin:0;
-        background-color: #49a9cf;
+        background-color: none;
+        
+    }
+}
+
+.horarios-items-container{
+    display: grid;
+    grid-template-areas:
+    "dias horarios";
+    grid-template-columns: 1fr 2fr;
+}
+
+.horarios-dias{
+    grid-area:dias;
+    p{
+        margin-bottom: 30px;
+    }
+}
+
+.horarios-horarios{
+    grid-area: horarios;
+    p{
+        margin-bottom: 30px;
     }
 }
