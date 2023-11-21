@@ -155,3 +155,61 @@ $fuente-titulo2: 'Times New Roman', Times, serif;
         margin-bottom: 30px;
     }
 }
+
+/*----------------------Nosotros*------------------------*/
+
+.nosotros-grid-container{
+    display: grid;
+    grid-template-areas:
+    "tituloHistoria imagenHistoria"
+    "textoHistoria imagenHistoria"
+    "imagenMision tituloMision"
+    "imagenMision textoMision";
+    grid-template-columns: 1fr 1fr;
+    margin:70px 110px;
+    align-items: center;
+}
+
+.tituloHistoria{
+    grid-area:tituloHistoria
+}
+
+.texto-historia{
+    grid-area:textoHistoria
+}
+
+.imagen-historia{
+    grid-area:imagenHistoria;
+    display: flex;
+    justify-content: center;
+    figure{
+        width: 400px;
+        img{
+            width: 100%;
+            border-radius: 20px;
+        }
+    }
+}
+
+.titulo-mision{
+    grid-area:tituloMision
+}
+
+.imagen-mision{
+    grid-area: imagenMision;
+    display: flex;
+    justify-content: start;
+    figure{
+        width: 400px;
+        margin:0;
+        img{
+            width: 100%;
+            border-radius: 20px;
+        }
+    }
+}
+
+.texto-mision{
+    grid-area:textoMision;
+
+}
