@@ -177,8 +177,10 @@ $fuente-titulo2: 'Times New Roman', Times, serif;
     "imagenMision tituloMision"
     "imagenMision textoMision";
     grid-template-columns: 1fr 1fr;
-    margin:70px 110px;
+    margin:70px 50px;
+    padding: 40px;
     align-items: center;
+    box-shadow: 0 0 20px #000;
 }
 
 .tituloHistoria{
@@ -242,18 +244,73 @@ $fuente-titulo2: 'Times New Roman', Times, serif;
     "turnosImagen tituloContacto"
     "turnosImagen turnosContacto";
     grid-template-columns: 1fr 1fr;
+    margin:50px;
+    padding: 20px;
 }
 
 .turnos-imagen{
+    color:#fff;
     grid-area:turnosImagen;
-    background-image: linear-gradient(to top,rgb(74, 169, 207,0.5),rgb(74, 169, 207,0.5)),url(../galeria/fondos/fondo4.jpg);
+    background-image: linear-gradient(to top,rgba(44, 127, 160, 0.8),rgba(66, 151, 185, 0.8)),url(../galeria/fondos/fondo4.jpg);
     background-size: cover;
+    background-position: center;
+    padding: 20px;
+}
+
+.turnos-imagen-titulo{
+    h2{
+        font-size: 30px;
+        margin:0px;
+    }
+    b{
+        font-size: 60px;
+        color:#ff0000;
+    }
+}
+
+.turnos-imagen-texto{
+    p{
+        font-size: 18px;
+        text-align: justify;
+    }
+}
+
+.turnos-imagen-icons-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 100px;
+    h3{
+        margin:0
+    }
+}
+
+.turnos-imagen-icons-item{
+    margin:  20px;
+    padding:10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    &:hover{
+        background-color: #49a9cf;
+        cursor: pointer;
+        box-shadow: 0 0 4px #fff;
+    }
+}
+
+.icon{
+    height: 20px;
+    width: 20px;
+    padding-right: 5px;
 }
 
 .titulo-contacto{
     grid-area:tituloContacto;
+    padding: 20px;
 }
 
 .turnos-contacto{
-    grid-area:turnosContacto
+    grid-area:turnosContacto;
+    padding: 50px;
 }
