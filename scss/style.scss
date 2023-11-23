@@ -6,7 +6,7 @@ body,main{
 }
 
 b{
-    color:#49a9cf
+    color:rgb(74, 169, 207)
 }
 
 /*Variables*/
@@ -232,4 +232,28 @@ $fuente-titulo2: 'Times New Roman', Times, serif;
     p{
         text-align: justify;
     }
+}
+
+/*-------Turnos----*/
+
+.turnos-grid-container{
+    display:grid;
+    grid-template-areas:
+    "turnosImagen tituloContacto"
+    "turnosImagen turnosContacto";
+    grid-template-columns: 1fr 1fr;
+}
+
+.turnos-imagen{
+    grid-area:turnosImagen;
+    background-image: linear-gradient(to top,rgb(74, 169, 207,0.5),rgb(74, 169, 207,0.5)),url(../galeria/fondos/fondo4.jpg);
+    background-size: cover;
+}
+
+.titulo-contacto{
+    grid-area:tituloContacto;
+}
+
+.turnos-contacto{
+    grid-area:turnosContacto
 }
