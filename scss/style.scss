@@ -245,7 +245,7 @@ $fuente-titulo2: 'Times New Roman', Times, serif;
     "turnosImagen turnosContacto";
     grid-template-columns: 1fr 1fr;
     margin:50px;
-    padding: 20px;
+    box-shadow: 0 0 8px #000;
 }
 
 .turnos-imagen{
@@ -326,12 +326,14 @@ section{
         width:100%;
         height: 30px;
         border-radius:10px;
-        border: solid #000 1px
+        border: solid #000 1px;
+        font-size: 16px;
+        &:hover{
+            background-color: #89bbcf;
+            color:#fff;
+        }
     }
 }
-
-
-
 
 #section-input{
     display: flex;
@@ -339,4 +341,12 @@ section{
 
 #section-input-nombre{
     margin-right:5px
+}
+
+#boton-reservar{
+    cursor:pointer;
+    &:active{
+        transform: scale(1.04);
+    }
+    
 }

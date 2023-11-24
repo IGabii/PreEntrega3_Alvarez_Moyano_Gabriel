@@ -222,7 +222,7 @@ b {
   grid-template-areas: "turnosImagen tituloContacto" "turnosImagen turnosContacto";
   grid-template-columns: 1fr 1fr;
   margin: 50px;
-  padding: 20px;
+  box-shadow: 0 0 8px #000;
 }
 
 .turnos-imagen {
@@ -301,6 +301,11 @@ section input {
   height: 30px;
   border-radius: 10px;
   border: solid #000 1px;
+  font-size: 16px;
+}
+section input:hover {
+  background-color: #89bbcf;
+  color: #fff;
 }
 
 #section-input {
@@ -309,4 +314,11 @@ section input {
 
 #section-input-nombre {
   margin-right: 5px;
+}
+
+#boton-reservar {
+  cursor: pointer;
+}
+#boton-reservar:active {
+  transform: scale(1.04);
 }/*# sourceMappingURL=style.css.map */
