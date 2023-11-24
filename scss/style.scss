@@ -238,6 +238,11 @@ $fuente-titulo2: 'Times New Roman', Times, serif;
 
 /*-------Turnos----*/
 
+.turnos-index-container{
+    text-align: center;
+    font-size: 45px;
+}
+
 .turnos-grid-container{
     display:grid;
     grid-template-areas:
@@ -348,5 +353,13 @@ section{
     &:active{
         transform: scale(1.04);
     }
-    
 }
+
+/*-----------Footer---------------------*/
+
+.footer-container{
+    background-color: #49a9cf;
+    clip-path: polygon(0 0, 100% 30%, 100% 100%, 0% 100%);
+    padding: 60px 0 60px 0;
+}
+

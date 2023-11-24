@@ -217,6 +217,11 @@ b {
 }
 
 /*-------Turnos----*/
+.turnos-index-container {
+  text-align: center;
+  font-size: 45px;
+}
+
 .turnos-grid-container {
   display: grid;
   grid-template-areas: "turnosImagen tituloContacto" "turnosImagen turnosContacto";
@@ -321,4 +326,12 @@ section input:hover {
 }
 #boton-reservar:active {
   transform: scale(1.04);
+}
+
+/*-----------Footer---------------------*/
+.footer-container {
+  background-color: #49a9cf;
+  -webkit-clip-path: polygon(0 0, 100% 30%, 100% 100%, 0% 100%);
+          clip-path: polygon(0 0, 100% 30%, 100% 100%, 0% 100%);
+  padding: 60px 0 60px 0;
 }/*# sourceMappingURL=style.css.map */
