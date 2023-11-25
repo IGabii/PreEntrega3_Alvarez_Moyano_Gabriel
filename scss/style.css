@@ -15,6 +15,9 @@ b {
   justify-content: space-between;
   align-items: center;
   background-color: #fff;
+  position: fixed;
+  z-index: 5;
+  width: 100%;
 }
 
 .logo-container img {
@@ -23,8 +26,14 @@ b {
 
 .links-container a {
   padding: 20px;
+  text-decoration: none;
+  color: #000;
+}
+.links-container a:hover {
+  color: #49a9cf;
 }
 
+/*----------Inicio-------------------------------------------*/
 .body-index-container {
   background-image: url(../galeria/fondos/fondo2.jpg);
   background-size: cover;
@@ -33,6 +42,7 @@ b {
   align-items: center;
   height: 80vh;
   animation: galeria 20s infinite;
+  padding-top: 60px;
 }
 
 @keyframes galeria {
@@ -345,7 +355,7 @@ section input:hover {
 
 /*-----------Footer---------------------*/
 .footer-container {
-  background-color: #4aa9cf;
+  background-color: #49a9cf;
   -webkit-clip-path: polygon(0 0, 100% 30%, 100% 100%, 0% 100%);
           clip-path: polygon(0 0, 100% 30%, 100% 100%, 0% 100%);
   padding: 60px 0 0px 0;
