@@ -330,8 +330,55 @@ section input:hover {
 
 /*-----------Footer---------------------*/
 .footer-container {
-  background-color: #49a9cf;
+  background-color: #4aa9cf;
   -webkit-clip-path: polygon(0 0, 100% 30%, 100% 100%, 0% 100%);
           clip-path: polygon(0 0, 100% 30%, 100% 100%, 0% 100%);
-  padding: 60px 0 60px 0;
+  padding: 60px 0 0px 0;
+  text-align: center;
+  color: #fff;
+}
+
+.titulo-footer h2 {
+  font-size: 40px;
+}
+
+.footer-items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-icons {
+  padding: 20px 60px 20px 60px;
+}
+
+.footer-icon {
+  height: 30px;
+  width: 30px;
+  color: #fff;
+  padding: 8px;
+  transition-duration: 0.5s;
+}
+.footer-icon:hover {
+  transform: scale(1.1);
+}
+
+#footer-whatsapp {
+  background-color: #25D366;
+  border-radius: 60%;
+}
+
+#footer-github {
+  background-color: #000;
+  color: #fff;
+  border-radius: 50%;
+}
+
+#footer-instagram {
+  background: linear-gradient(#405DE6, #5B51D8, #833AB4, #C13584, #E1306C, #FD1D1D, #F56040, #777737, #FCAF45, #FFDC80);
+  border-radius: 20px;
+}
+
+.footer-copyright h4 {
+  margin: 0;
 }/*# sourceMappingURL=style.css.map */
