@@ -39,7 +39,26 @@ $fuente-titulo2: 'Times New Roman', Times, serif;
     display: flex;
     align-items: center;
     height: 80vh;
-    
+    animation: galeria 20s infinite;
+}
+
+@keyframes  galeria{
+    0%{
+        background-image:url(../galeria/fondos/fondo2.jpg);
+    }
+
+    40%{
+        background-image: url(../galeria/fondos/fondo5.jpg);
+    }
+
+    80%{
+        background-image: url(../galeria/fondos/fondo6.jpg);
+    }
+
+    100%{
+        background-image: url(../galeria/fondos/fondo2.jpg);
+    }
+
 }
 
 .titulos-container{
