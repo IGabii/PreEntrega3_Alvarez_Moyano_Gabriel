@@ -463,6 +463,13 @@ section input:hover {
   .turnos-imagen-icons-item {
     margin: 5px;
   }
+  .logo-container img {
+    width: 150px;
+  }
+  .links-container a {
+    font-size: 15px;
+    padding: 10px;
+  }
 }
 @media only screen and (max-width: 577px) {
   .turnos-imagen-icons-container h3 {
