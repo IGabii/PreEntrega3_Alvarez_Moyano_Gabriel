@@ -462,6 +462,9 @@ section input:hover {
   }
 }
 @media only screen and (max-width: 652px) {
+  .endocrinologia-container, .diabetes-container {
+    text-align: left;
+  }
   .turnos-imagen-icons-item {
     margin: 5px;
   }
@@ -491,4 +494,26 @@ section input:hover {
   .tunos-imagen-icons-item {
     margin: 0;
   }
+}
+.endocrinologia-container, .diabetes-container {
+  margin: 60px;
+  box-shadow: 0 0 10px #000;
+  padding: 40px;
+  color: #fff;
+}
+.endocrinologia-container h2, .diabetes-container h2 {
+  text-align: center;
+}
+.endocrinologia-container p, .diabetes-container p {
+  text-align: justify;
+}
+
+.diabetes-container {
+  background-image: linear-gradient(to top, rgba(13, 21, 24, 0.5), rgba(7, 19, 24, 0.5)), url(../galeria/especialidades/diabetes.jpg);
+  background-size: cover;
+}
+
+.endocrinologia-container {
+  background-image: linear-gradient(to top, rgba(13, 21, 24, 0.5), rgba(7, 19, 24, 0.5)), url(../galeria/especialidades/endocrinologia.jpg);
+  background-size: cover;
 }/*# sourceMappingURL=style.css.map */
